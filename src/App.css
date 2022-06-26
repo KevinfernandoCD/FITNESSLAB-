@@ -1,0 +1,125 @@
+.hero-banner{
+    display: flex;
+    transition:all 0.3s;
+    animation:popup 1s;
+}
+
+.hero-banner:hover{
+    
+    transform:translateY(-10%);
+    
+       
+}
+
+
+@keyframes popup {
+
+    from{
+
+        transform:translateX(-100%);
+        
+    }
+    
+    to{
+        transform: translateX(0%);
+        
+    }
+}
+
+.image{
+
+    animation: comedown 1s;
+    transition: all 0.3s;
+}
+
+
+@keyframes comedown {
+
+    from{
+
+        opacity: 0;
+    }
+
+    to{
+
+        opacity: 1;
+    }
+
+    
+}
+
+.nav{
+
+    animation:fromTop 0.8s;
+}
+
+@keyframes fromTop {
+
+    from{
+
+        transform:translateY(-100%);
+
+    }
+
+    to{
+
+        transform: translateY(0%);
+
+
+    }
+
+    
+}
+
+.explore{
+
+    width: 200px;
+    margin-top: 25px;
+    padding:10px 0px;
+    border: none;
+    font-weight: 500;
+    background-color: #2FCE6F;
+    color:white;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+   cursor: pointer;
+   transition:all 0.4s;
+   animation: intro 1s;
+}
+
+.explore:hover{
+
+   background-color: #2FCE6F;
+
+}
+
+.explore > a{
+
+    text-decoration: none;
+    color: white;
+} 
+
+@keyframes intro {
+
+    from {
+
+    transform: translateX(-100%);
+    }
+
+    to{
+    transform: translateX(0%);
+    }
+    
+}
+
+
+.card{
+
+    background-image:linear-gradient(#2FCE6F,#76A1BA);
+    transition:all 0.3s;
+   
+}
+.card:hover{
+    box-shadow: 5px 10px 8px 8px #888888
+
+}
